@@ -1,0 +1,35 @@
+{
+  "name": "widget-template",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Template for creating dashboard widgets with Module Federation",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext js,jsx"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@originjs/vite-plugin-federation": "^1.4.1",
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react": "^7.37.0",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "vite": "^7.2.4"
+  },
+  "keywords": [
+    "widget",
+    "micro-frontend",
+    "module-federation",
+    "react",
+    "dashboard"
+  ]
+}

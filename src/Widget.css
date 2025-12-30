@@ -1,0 +1,25 @@
+/* Main widget container styles */
+/* Import specific widget CSS in widget components */
+
+/* Common widget utilities */
+.widget-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: #666;
+}
+
+.widget-error {
+  padding: 1rem;
+  background: #fee;
+  border-left: 4px solid #dc3545;
+  border-radius: 4px;
+  color: #721c24;
+}
+
+.widget-error h4 {
+  margin: 0 0 0.5rem 0;
+  color: #721c24;
+}
