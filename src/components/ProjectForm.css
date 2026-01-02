@@ -1,0 +1,168 @@
+.important-projects-form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.important-projects-form-modal {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 500px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.important-projects-form-title {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.5rem;
+  color: #1a1a1a;
+}
+
+.important-projects-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.important-projects-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.important-projects-form-group label {
+  font-weight: 500;
+  color: #333;
+  font-size: 0.875rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.important-projects-form-hint {
+  font-weight: 400;
+  color: #666;
+  font-size: 0.75rem;
+  font-style: italic;
+}
+
+.important-projects-form-group input,
+.important-projects-form-group textarea,
+.important-projects-form-group select {
+  padding: 0.625rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9375rem;
+  font-family: inherit;
+  transition: border-color 0.2s ease;
+}
+
+.important-projects-form-group input:focus,
+.important-projects-form-group textarea:focus,
+.important-projects-form-group select:focus {
+  outline: none;
+  border-color: #0066cc;
+}
+
+.important-projects-form-group input.error,
+.important-projects-form-group textarea.error,
+.important-projects-form-group select.error {
+  border-color: #dc3545;
+}
+
+.important-projects-form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.important-projects-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.important-projects-form-error {
+  color: #dc3545;
+  font-size: 0.75rem;
+  margin-top: -0.25rem;
+}
+
+.important-projects-form-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.important-projects-form-buttons-right {
+  display: flex;
+  gap: 0.75rem;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.important-projects-btn-cancel {
+  padding: 0.625rem 1.25rem;
+  background: #6c757d;
+  color: white;
+}
+
+.important-projects-btn-cancel:hover {
+  background: #5a6268;
+}
+
+.important-projects-btn-submit {
+  padding: 0.625rem 1.25rem;
+  background: #28a745;
+  color: white;
+}
+
+.important-projects-btn-submit:hover {
+  background: #218838;
+}
+
+.important-projects-btn-delete-form {
+  padding: 0.625rem 1.25rem;
+  background: transparent;
+  color: #dc3545;
+  border: 1px solid #dc3545;
+}
+
+.important-projects-btn-delete-form:hover {
+  background: #dc3545;
+  color: white;
+}
+
+@media (max-width: 500px) {
+  .important-projects-form-modal {
+    padding: 1.5rem;
+  }
+
+  .important-projects-form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .important-projects-form-buttons {
+    flex-direction: column;
+  }
+
+  .important-projects-form-buttons-right {
+    width: 100%;
+  }
+
+  .important-projects-btn-delete-form {
+    width: 100%;
+  }
+}

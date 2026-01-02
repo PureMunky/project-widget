@@ -1,0 +1,217 @@
+.important-projects-card {
+  position: relative;
+  background: white;
+  border-radius: 8px;
+  padding: 1.25rem;
+  border-left: 4px solid;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.important-projects-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.important-projects-card:hover .important-projects-btn-edit-subtle {
+  opacity: 1;
+}
+
+/* Status-based border colors and backgrounds */
+.important-projects-status-planning {
+  border-left-color: #ffc107;
+  background: rgba(255, 193, 7, 0.03);
+}
+
+.important-projects-status-in-progress {
+  border-left-color: #0066cc;
+  background: rgba(0, 102, 204, 0.03);
+}
+
+.important-projects-status-blocked {
+  border-left-color: #dc3545;
+  background: rgba(220, 53, 69, 0.03);
+}
+
+.important-projects-status-completed {
+  border-left-color: #28a745;
+  background: rgba(40, 167, 69, 0.03);
+  opacity: 0.85;
+}
+
+/* Card header */
+.important-projects-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.important-projects-card-name {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  flex: 1;
+}
+
+/* Priority badge */
+.important-projects-priority {
+  display: inline-block;
+  padding: 0.25rem 0.625rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.important-projects-priority-high {
+  background: #dc3545;
+  color: white;
+}
+
+.important-projects-priority-medium {
+  background: #ffc107;
+  color: #333;
+}
+
+.important-projects-priority-low {
+  background: #6c757d;
+  color: white;
+}
+
+/* Status badge */
+.important-projects-status-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.375rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.important-projects-status-badge-planning {
+  background: #ffc107;
+  color: #333;
+}
+
+.important-projects-status-badge-in-progress {
+  background: #0066cc;
+  color: white;
+}
+
+.important-projects-status-badge-blocked {
+  background: #dc3545;
+  color: white;
+}
+
+.important-projects-status-badge-completed {
+  background: #28a745;
+  color: white;
+}
+
+/* Description */
+.important-projects-card-description {
+  margin: 0 0 1rem 0;
+  color: #555;
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+
+.important-projects-card-description p {
+  margin: 0 0 0.5rem 0;
+}
+
+.important-projects-card-description p:last-child {
+  margin-bottom: 0;
+}
+
+.important-projects-card-description a {
+  color: #0066cc;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 102, 204, 0.3);
+  transition: border-color 0.2s ease;
+}
+
+.important-projects-card-description a:hover {
+  border-bottom-color: #0066cc;
+}
+
+.important-projects-card-description strong {
+  font-weight: 600;
+  color: #333;
+}
+
+.important-projects-card-description em {
+  font-style: italic;
+}
+
+.important-projects-card-description code {
+  background: rgba(0, 0, 0, 0.05);
+  padding: 0.125rem 0.25rem;
+  border-radius: 3px;
+  font-family: 'Monaco', 'Consolas', monospace;
+  font-size: 0.85em;
+}
+
+.important-projects-card-description ul,
+.important-projects-card-description ol {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+}
+
+.important-projects-card-description li {
+  margin: 0.25rem 0;
+}
+
+/* Deadline */
+.important-projects-card-deadline {
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.important-projects-card-deadline strong {
+  color: #333;
+}
+
+/* Overdue warning */
+.important-projects-overdue-warning {
+  background: #dc3545;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+/* Subtle edit button */
+.important-projects-btn-edit-subtle {
+  position: absolute;
+  bottom: 0.75rem;
+  right: 0.75rem;
+  padding: 0.375rem 0.75rem;
+  background: rgba(0, 102, 204, 0.1);
+  color: #0066cc;
+  border: 1px solid rgba(0, 102, 204, 0.2);
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+.important-projects-btn-edit-subtle:hover {
+  background: rgba(0, 102, 204, 0.15);
+  border-color: rgba(0, 102, 204, 0.3);
+}

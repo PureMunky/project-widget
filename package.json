@@ -1,9 +1,9 @@
 {
-  "name": "widget-template",
+  "name": "important-projects-widget",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Template for creating dashboard widgets with Module Federation",
+  "description": "Widget for tracking important projects with localStorage persistence",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "react-dom": "^19.2.0",
+    "react-markdown": "^10.1.0"
   },
   "devDependencies": {
     "@originjs/vite-plugin-federation": "^1.4.1",

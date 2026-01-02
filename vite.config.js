@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [
     react(),
     federation({
-      name: 'exampleWidget',
+      name: 'importantProjectsWidget',
       filename: 'remoteEntry.js',
       exposes: {
         './Widget': './src/Widget.jsx'
@@ -30,6 +30,6 @@ export default defineConfig({
     cssCodeSplit: false
   },
   // Configure base path for GitHub Pages deployment
-  // IMPORTANT: Change 'widget-template' to match your repository name
-  base: '/widget-template/'
+  // IMPORTANT: Change 'project-widget' to match your repository name
+  base: '/project-widget/'
 })
