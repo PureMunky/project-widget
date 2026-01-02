@@ -29,7 +29,6 @@ export default defineConfig({
     minify: false,
     cssCodeSplit: false
   },
-  // Configure base path for GitHub Pages deployment
-  // IMPORTANT: Change 'project-widget' to match your repository name
+  // Base path for GitHub Pages deployment
   base: '/project-widget/'
 })
